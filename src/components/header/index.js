@@ -3,6 +3,7 @@ import "./styles.css";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  console.log(window.location.href);
   return (
     <header className="bg-dark py-3">
       <div class="container d-flex justify-content-between align-items-center ">
@@ -12,12 +13,16 @@ const Header = () => {
         <nav className="d-lg-block d-none ml-auto">
           <ul className="list-unstyled d-flex align-items-center mb-0">
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a
+                className="text-white px-2 text-decoration-none active"
+                class="active"
+                href="#home"
+              >
                 HOME
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none" href="#clock">
                 CLOCK
               </a>
             </li>

@@ -76,3 +76,8 @@ img {
   visibility: visible;
   opacity: 1;
 }
+
+.active {
+  color: #1ca69d;
+  text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.buy-now-header {
+  background: #fff;
+  padding: 10px 0px;
+  text-align: right;
+}
+.buy-now-header p {
+  color: #4e4d4d;
+  display: inline-block;
+  align-items: center;
+}
+.buy-now-header p strong {
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 20px;
+}
+.buy-now-header .buy-now {
+  background: #f55862;
+  background: linear-gradient(90deg, #f55862 0%, #792a5a 100%);
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 20px;
+  border: none;
+  outline: none !important;
+}
+.buy-now-header .buy-now:hover {
+  background: #0ba69d;
+}

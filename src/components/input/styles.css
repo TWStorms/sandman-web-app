@@ -1,0 +1,22 @@
+.form-control {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding-left: 20px;
+  color: #fff;
+}
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #fff;
+}
+.form-control::-ms-input-placeholder {
+  color: #fff;
+}
+.form-control:focus,
+.form-control:active {
+  background: rgba(255, 255, 255, 0.4);
+  outline: #0ba69d;
+}

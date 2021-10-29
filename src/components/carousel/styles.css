@@ -1,0 +1,41 @@
+.banner-section {
+  background: #e7e7e7;
+  padding: 60px 0px;
+}
+.banner-section .owl-theme .owl-nav {
+  display: none;
+}
+.banner-section .heading-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-div {
+  background-color: #e7e7e7;
+}
+.banner-section .heading-section h1 {
+  font-weight: bold;
+  font-size: 42px;
+  max-width: 420px;
+  color: #000;
+  text-transform: uppercase;
+}
+.banner-section .heading-section .icon-heading {
+  display: flex;
+  align-items: flex-start;
+}
+.banner-section .heading-section .icon-heading img {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.banner-section .owl-theme .owl-dots .owl-dot span {
+  background: none;
+  border: #000 solid 1px;
+}
+.banner-section .owl-theme .owl-dots .owl-dot.active span,
+.banner-section .owl-theme .owl-dots .owl-dot:hover span {
+  background: #000;
+}
+.banner-img {
+  width: 40%;
+}

@@ -7,7 +7,7 @@ import "./styles.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BuyNow from "../../components/buyNowSection";
-import Carousel from "../../components/carous// STYLINGSel";
+import Carousel from "../../components/carousel";
 import Input from "../../components/input";
 
 function index() {

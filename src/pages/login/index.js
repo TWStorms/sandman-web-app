@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Route, Link } from "react-router-dom";
-
+import { Route, Link, useHistory } from "react-router-dom";
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-
 // components
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -14,26 +12,25 @@ import Carousel from "../../components/carousel";
 import Input from "../../components/input";
 
 const Login = () => {
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    const load = async () => {
-      await new Promise((r) => setTimeout(r, 2000));
-      setLoading((loading) => !loading);
-    };
-    load();
-  }, []);
+  const history = useHistory();
 
+  const routeChange = () => {
+    let path = `dashboard`;
+    history.push(path);
+  };
   return (
     <div>
       <Header />
       <BuyNow />
       <Carousel />
+
       <section
         class="login-bg"
         style={{ backgroundImage: "url(./images/login-bg.jpg)" }}
       >
         <div class="container container-sm">
           <h2>LOG IN</h2>
+
           <form>
             <Input placeHolder="Email" type="text" />
             <Input placeHolder="Password" type="password" />
@@ -43,7 +40,9 @@ const Login = () => {
               </a>
             </div>
             <div class="text-center">
-              <button class="submit-btn">LOG IN</button>
+              <button class="submit-btn" onClick={routeChange}>
+                LOG IN
+              </button>
             </div>
             <p class="create-account text-center mb-2">
               New to Doppler?{" "}
@@ -64,5 +63,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;

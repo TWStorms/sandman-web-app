@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -36,9 +37,9 @@ function index() {
             </div>
             <p class="create-account text-center mb-2">
               Alreday have an account?{" "}
-              <a href="#" class="underline">
-                Login
-              </a>
+              <Link to="/login" class="underline">
+                login
+              </Link>
             </p>
             <p class="text-center">Version 1.3.9</p>
           </form>

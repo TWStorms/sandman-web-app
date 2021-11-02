@@ -7,6 +7,9 @@ import Register from "./pages/signup";
 import Dashboard from "./pages/dashboard";
 import AddDopler from "./pages/addNewDopler";
 import AmazonLogin from "./pages/amazonLogin";
+import Settings from "./pages/settings";
+import DopplerInfo from "./pages/settings/dopplerInfo";
+import Wifi from "./pages/settings/wifi";
 
 const App = () => {
   return (
@@ -15,6 +18,15 @@ const App = () => {
         <Switch>
           <Route path="/amazonLogin">
             <AmazonLogin />
+          </Route>
+          <Route path="/settings">
+            <Settings />
+          </Route>
+          <Route path="/dopplerInfo">
+            <DopplerInfo />
+          </Route>
+          <Route path="/wifi">
+            <Wifi />
           </Route>
           <Route path="/addDopler">
             <AddDopler />

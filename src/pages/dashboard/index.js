@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import BuyNow from "../../components/buyNowSection";
 import Carousel from "../../components/carousel";
 import Footer from "../../components/footer";
+import { FaCog } from "react-icons/fa";
 // style
 import "./styles.css";
 
@@ -14,7 +15,7 @@ const index = () => {
       <BuyNow />
       <Carousel />
       <section
-        class="login-bg dashboard"
+        class="login-bg dashboard p-1"
         style={{ backgroundImage: "url(./images/login-bg.jpg)" }}
       >
         <div class="container">
@@ -27,7 +28,7 @@ const index = () => {
               <a href="#">SUPPORT & FEEDBACK</a>
             </li>
             <li>
-              <a href="/addDopler">ADD NEW DOPPLER</a>
+              <a href="#">ADD NEW DOPPLER</a>
             </li>
             <li>
               <a href="#">ABOUT</a>
@@ -40,6 +41,12 @@ const index = () => {
             </li>
             <li>
               <a href="/amazonLogin">AMAZON ALEXA APP</a>
+            </li>
+            <li>
+              <a href="/settings">
+                <FaCog style={{ marginRight: 10 }} />
+                SETTINGS
+              </a>
             </li>
             <li>
               <a href="#">LOG OUT</a>

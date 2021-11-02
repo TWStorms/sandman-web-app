@@ -14,7 +14,7 @@ import Input from "../../components/input";
 const Login = () => {
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
-  // const history = useHistory();
+  const history = useHistory();
 
   // const handleLogin = async () => {
   //   // console.log(email, password);
@@ -57,10 +57,10 @@ const Login = () => {
   //   // history.push("/dashboard");
   // };
 
-  // const routeChange = () => {
-  //   let path = `dashboard`;
-  //   history.push(path);
-  // };
+  const handleLogin = () => {
+    let path = `dashboard`;
+    history.push(path);
+  };
 
   return (
     <div>
@@ -92,10 +92,7 @@ const Login = () => {
             </a>
           </div>
           <div class="text-center">
-            <button
-              class="submit-btn"
-              // onClick={handleLogin}
-            >
+            <button class="submit-btn" onClick={handleLogin}>
               LOG IN
             </button>
           </div>

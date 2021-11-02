@@ -559,9 +559,9 @@ footer .copyright {
   background: #9cff7e;
 }
 .brightness {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
+  /* display: flex; */
+  /* align-content: center; */
+  /* justify-content: space-between; */
 }
 .brightness .preview3,
 .brightness .preview4 {

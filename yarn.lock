@@ -9216,6 +9216,14 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-bootstrap-range-slider@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-range-slider/-/react-bootstrap-range-slider-3.0.3.tgz#6b99a2fac775030814d30fb9003e5ce88db95137"
+  integrity sha512-D2L0yDltDQCC0Yq40vHgVL2hHYVa+cLHv2OqgzuFUEB/IdqzHbz22yGjuj5jS12VIRB1CX+KxzeH+7nBojg+Sg==
+  dependencies:
+    classnames "^2.3.1"
+    prop-types "^15.7.2"
+
 react-bootstrap@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.0.0.tgz#f0fd0b4638f8d5fc3ee197b5550af619b723632c"
@@ -9416,6 +9424,13 @@ react-spinners@^0.11.0:
   integrity sha512-rDZc0ABWn/M1OryboGsWVmIPg8uYWl0L35jPUhr40+Yg+syVPjeHwvnB7XWaRpaKus3M0cG9BiJA+ZB0dAwWyw==
   dependencies:
     "@emotion/react" "^11.1.4"
+
+react-switch@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-6.0.0.tgz#bd4a2dea08f211b8a32e55e8314fd44bc1ec947e"
+  integrity sha512-QV3/6eRK5/5epdQzIqvDAHRoGLbCv/wDpHUi6yBMXY1Xco5XGuIZxvB49PHoV1v/SpEgOCJLD/Zo43iic+aEIw==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-topbar-progress-indicator@^4.1.0:
   version "4.1.0"

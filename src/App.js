@@ -10,6 +10,7 @@ import AmazonLogin from "./pages/amazonLogin";
 import Settings from "./pages/settings";
 import DopplerInfo from "./pages/settings/dopplerInfo";
 import Wifi from "./pages/settings/wifi";
+import Brightness from "./pages/settings/brightness";
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
           </Route>
           <Route path="/wifi">
             <Wifi />
+          </Route>
+          <Route path="/brightness">
+            <Brightness />
           </Route>
           <Route path="/addDopler">
             <AddDopler />

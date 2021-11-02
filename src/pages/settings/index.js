@@ -39,7 +39,7 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/brightness">
                   Brightness <FaAngleRight />
                 </a>
               </li>

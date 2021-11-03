@@ -13,7 +13,6 @@ import { FaSun } from "react-icons/fa";
 import { FaRegSun } from "react-icons/fa";
 // STYLES
 import "../styles.css";
-import Input from "../../../components/input";
 
 const Brightness = () => {
   const [day, setDay] = useState(0);

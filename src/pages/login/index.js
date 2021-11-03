@@ -13,8 +13,8 @@ import Carousel from "../../components/carousel";
 import Input from "../../components/input";
 
 const Login = () => {
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   // let axiosConfig = {
   //   headers: {
@@ -82,12 +82,10 @@ const Login = () => {
   //   // let item = { email, password, applicationId };
   //   await fetch("https://api.sandmandoppler.bycopilot.com/v4/auth/login", {
   //     method: "POST",
-  //     // headers: {
-  //     //   Accept: "application/json",
-  //     //   "Content-Type": "application/json",
-  //     // },
-  //     headers: headers,
-  //     credentials: "include",
+  //     headers: {
+  //       // Accept: "application/json",
+  //       // "Content-Type": "application/json",
+  //     },
   //     mode: "no-cors",
   //     body: JSON.stringify({
   //       authenticationDetails: {
@@ -110,7 +108,7 @@ const Login = () => {
   //       },
   //     }),
   //   })
-  //     // .then((response) => response.json())
+  //     .then((response) => response.json())
   //     .then((json) => {
   //       console.log(json);
   //     })
@@ -156,10 +154,7 @@ const Login = () => {
             </a>
           </div>
           <div class="text-center">
-            <button
-              class="submit-btn"
-              // onClick={handleLogin}
-            >
+            <button class="submit-btn" onClick={{}}>
               LOG IN
             </button>
           </div>

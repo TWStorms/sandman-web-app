@@ -73,6 +73,11 @@ const index = () => {
                   Sign in to Amazon Alexa <FaAngleRight />
                 </a>
               </li>
+              <li>
+                <a href="advancedSettings">
+                  Advanced Settings <FaAngleRight />
+                </a>
+              </li>
             </ul>
             <a href="#" class="white-btn blue-btn mt-5">
               Remove Device

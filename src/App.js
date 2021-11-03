@@ -8,6 +8,7 @@ import Dashboard from "./pages/dashboard";
 import AddDopler from "./pages/addNewDopler";
 import AmazonLogin from "./pages/amazonLogin";
 import Settings from "./pages/settings";
+import AdvancedSettings from "./pages/settings/advancedSettings";
 import DopplerInfo from "./pages/settings/dopplerInfo";
 import Wifi from "./pages/settings/wifi";
 import Brightness from "./pages/settings/brightness";
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route path="/settings">
             <Settings />
+          </Route>
+          <Route path="/advancedSettings">
+            <AdvancedSettings />
           </Route>
           <Route path="/dopplerInfo">
             <DopplerInfo />

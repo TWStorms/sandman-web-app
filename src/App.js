@@ -13,6 +13,7 @@ import Wifi from "./pages/settings/wifi";
 import Brightness from "./pages/settings/brightness";
 import DopplerColor from "./pages/settings/dopplerColor";
 import Audio from "./pages/settings/audio";
+import EditDopplerName from "./pages/settings/editDopplerName";
 
 const App = () => {
   return (
@@ -40,7 +41,10 @@ const App = () => {
           <Route path="/audio">
             <Audio />
           </Route>
-          <Route path="/addDopler">
+          <Route path="/editDopplerName">
+            <EditDopplerName />
+          </Route>
+          <Route path="/addDoppler">
             <AddDopler />
           </Route>
           <Route path="/dashboard">

@@ -54,7 +54,7 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/editDopplerName">
                   Edit Doppler name <FaAngleRight />
                 </a>
               </li>

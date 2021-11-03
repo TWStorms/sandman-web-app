@@ -44,7 +44,7 @@ const index = () => {
             </li>
             <li>
               <a href="/settings">
-                <FaCog style={{ marginRight: 10 }} />
+                {/* <FaCog style={{ marginRight: 10 }} /> */}
                 SETTINGS
               </a>
             </li>

@@ -37,7 +37,7 @@ const wifi = () => {
               off to completely reset it
             </p>
             <div class="text-center mt-5">
-              <img src="assets/images/device.png" alt="" />
+              <img src="./images/device.png" alt="" />
             </div>
           </div>
         </div>

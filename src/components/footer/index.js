@@ -1,4 +1,13 @@
+import React from "react";
+// STYLES
 import "./styles.css";
+// ICONS
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaDribbble,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,7 +33,14 @@ const Footer = () => {
             <h3>RESOURCES</h3>
           </div>
           <div class="col-lg-3">
-            <img src="./images/ft-logo.png" alt="" class="mb-3" />
+            <img
+              src="./images/ft-logo.png"
+              style={{
+                width: 260,
+              }}
+              alt=""
+              class="mb-3"
+            />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -32,22 +48,22 @@ const Footer = () => {
             <ul class="social-icons list-unstyled">
               <li>
                 <a href="#" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
+                  <FaFacebookF />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <i class="fab fa-twitter"></i>
+                  <FaTwitter />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <i class="fab fa-instagram"></i>
+                  <FaInstagram />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
+                  <FaDribbble />
                 </a>
               </li>
             </ul>

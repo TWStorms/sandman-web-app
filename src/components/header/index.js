@@ -1,13 +1,15 @@
 import { useState } from "react";
+// ICONS
+import { FaBars } from "react-icons/fa";
+// STYLES
 import "./styles.css";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  console.log(window.location.href);
   return (
     <header className="bg-dark py-3">
       <div class="container d-flex justify-content-between align-items-center ">
-        <a href="index.html">
+        <a href="/">
           <img src="/images/logo.png" alt="Logo" />
         </a>
         <nav className="d-lg-block d-none ml-auto">
@@ -55,20 +57,22 @@ const Header = () => {
         </nav>
         <nav className="d-lg-none d-block ml-auto">
           <div onClick={() => setToggle(true)}>
-            <i
+            <FaBars
               class="fas fa-bars"
               style={{
                 color: "white",
-                fontSize: "32px",
-                marginRight: "20px",
+                fontSize: "24px",
+                marginLeft: "60px",
+                textAlign: "right",
+                alignSelf: "flex-end",
               }}
-            ></i>
+            />
           </div>
         </nav>
         <section className="nav" className={toggle ? "nav--open " : ""}>
           <div class="nav__links bg-dark h-100">
             <div className="logo-img">
-              <a href="index.html" className="">
+              <a href="/" className="">
                 <img src="/images/logo.png" alt="Logo" />
               </a>
             </div>

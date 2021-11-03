@@ -22,7 +22,7 @@ const index = () => {
       >
         <div class="container">
           <div class="container-sm-500">
-            <a href="/settings" class="back-arrow">
+            <a href="/dashboard" class="back-arrow">
               <FaArrowLeft />
             </a>
             <h2 class="text-left">SETTINGS</h2>

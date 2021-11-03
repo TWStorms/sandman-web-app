@@ -28,7 +28,7 @@ const index = () => {
               <a href="#">SUPPORT & FEEDBACK</a>
             </li>
             <li>
-              <a href="#">ADD NEW DOPPLER</a>
+              <a href="/addDopler">ADD NEW DOPPLER</a>
             </li>
             <li>
               <a href="#">ABOUT</a>

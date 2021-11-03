@@ -17,6 +17,7 @@ import DopplerColor from "./pages/settings/dopplerColor";
 import Audio from "./pages/settings/audio";
 import EditDopplerName from "./pages/settings/editDopplerName";
 import Weathersettings from "./pages/settings/weather";
+import TimezoneSettings from "./pages/settings/timezone";
 
 const App = () => {
   return (
@@ -55,6 +56,9 @@ const App = () => {
           </Route>
           <Route path="/weathersettings">
             <Weathersettings />
+          </Route>
+          <Route path="/timezoneSettings">
+            <TimezoneSettings />
           </Route>
           <Route path="/addDoppler">
             <AddDopler />

@@ -64,7 +64,7 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/timezoneSettings">
                   Time settings <FaAngleRight />
                 </a>
               </li>

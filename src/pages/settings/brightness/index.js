@@ -58,7 +58,6 @@ const Brightness = () => {
                   variant="light"
                   size="lg"
                 />
-                {/* <img src="./assets/images/brightness-icon.png" alt="" /> */}
               </div>
             </div>
 
@@ -98,11 +97,6 @@ const Brightness = () => {
                   offColor="#707070"
                   onColor="#49c85a"
                 />
-                {/* <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="customSwitch1"
-                /> */}
                 <label class="custom-control-label" for="customSwitch1"></label>
               </div>
             </div>

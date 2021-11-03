@@ -25,8 +25,8 @@ const Brightness = () => {
       >
         <div class="container">
           <div class="">
-            <a href="dashboard.html" class="back-arrow">
-              <i class="fa fa-arrow-left"></i>
+            <a href="/settings" class="back-arrow">
+              <FaArrowLeft />
             </a>
             <h2 class="text-left">ADVANCED AUDIO SETTINGS</h2>
             <p class="large-text">

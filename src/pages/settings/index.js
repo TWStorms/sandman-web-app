@@ -59,8 +59,8 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
-                  Wheather <FaAngleRight />
+                <a href="/weathersettings">
+                  Weather <FaAngleRight />
                 </a>
               </li>
               <li>

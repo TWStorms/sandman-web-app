@@ -29,12 +29,46 @@ const Brightness = () => {
         style={{ backgroundImage: "url(./images/login-bg.jpg)" }}
       >
         <div class="container">
-          <div class="container-sm-500">
-            <a href="/settings" class="back-arrow">
-              <FaArrowLeft />
-            </a>
-            <h2 class="text-left">BRIGHTNESS</h2>
+          <a href="/settings" class="back-arrow">
+            <FaArrowLeft />
+          </a>
+          <h2 class="text-left">ADVANCED SETTINGS</h2>
+          <p class="large-text">
+            Turning on blackout mode will completely dim the buttons and display
+            when your Droppler is in night mode. This will override and replace
+            our current selections. <br />
+            <br />
+            When your Droppler is in blackout mode, you can press andy of the
+            buttons to have the buttons glow softly for 20 seconds.
+          </p>
 
+          <div class="use-24 mt-5">
+            <p class="large-text">Select blackout mode:</p>
+            <div class="custom-control custom-switch">
+              <Switch
+                onChange={() => setCheck(!check)}
+                checked={check}
+                checkedIcon={false}
+                uncheckedIcon={false}
+                offColor="#707070"
+                onColor="#49c85a"
+              />
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+          </div>
+
+          <p class="large-text">
+            Your Doppler has a light sensor that is uses to determine whether it
+            should be in day or night mode. You can adjust the point at which
+            the Doppler will change modes.
+            <br />
+            <br />
+            Doppler is currently in <br />
+            <br />
+            Current light sensor value: 12
+          </p>
+
+          <div class="container-sm-500">
             <div class="custom-range-slider">
               <label class="custom-label mb-3 mt-5">
                 Day Brightness : <span class="output">{day}</span>%
@@ -86,27 +120,8 @@ const Brightness = () => {
               </div>
             </div>
 
-            <div class="use-24 mt-5">
-              <p>Match display and buttons:</p>
-              <div class="custom-control custom-switch">
-                <Switch
-                  onChange={() => setCheck(!check)}
-                  checked={check}
-                  checkedIcon={false}
-                  uncheckedIcon={false}
-                  offColor="#707070"
-                  onColor="#49c85a"
-                />
-                <label class="custom-control-label" for="customSwitch1"></label>
-              </div>
-            </div>
-
             <a href="#" class="white-btn mt-5">
               Restore to defaults
-            </a>
-
-            <a href="/advancedBrightness" class="white-btn mt-3">
-              Show Advanced Settings
             </a>
           </div>
         </div>

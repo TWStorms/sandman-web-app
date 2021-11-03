@@ -12,6 +12,7 @@ import AdvancedSettings from "./pages/settings/advancedSettings";
 import DopplerInfo from "./pages/settings/dopplerInfo";
 import Wifi from "./pages/settings/wifi";
 import Brightness from "./pages/settings/brightness";
+import AdvancedBrightness from "./pages/settings/advancedBrightness";
 import DopplerColor from "./pages/settings/dopplerColor";
 import Audio from "./pages/settings/audio";
 import EditDopplerName from "./pages/settings/editDopplerName";
@@ -38,6 +39,9 @@ const App = () => {
           </Route>
           <Route path="/brightness">
             <Brightness />
+          </Route>
+          <Route path="/advancedBrightness">
+            <AdvancedBrightness />
           </Route>
           <Route path="/dopplerColor">
             <DopplerColor />

@@ -12,6 +12,7 @@ import DopplerInfo from "./pages/settings/dopplerInfo";
 import Wifi from "./pages/settings/wifi";
 import Brightness from "./pages/settings/brightness";
 import DopplerColor from "./pages/settings/dopplerColor";
+import Audio from "./pages/settings/audio";
 
 const App = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
           </Route>
           <Route path="/dopplerColor">
             <DopplerColor />
+          </Route>
+          <Route path="/audio">
+            <Audio />
           </Route>
           <Route path="/addDopler">
             <AddDopler />

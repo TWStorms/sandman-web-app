@@ -49,7 +49,7 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/audio">
                   Audio settings <FaAngleRight />
                 </a>
               </li>

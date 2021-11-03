@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // STYLES
 import "./styles.css";
 // ICONS
@@ -12,12 +13,12 @@ import {
 const Footer = () => {
   return (
     <footer style={{ backgroundImage: "url(./images/footer-bg.jpg)" }}>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3">
             <h3>COMPANY</h3>
           </div>
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <h3>Open hour</h3>
             <p>
               Monday 11am-7pm
@@ -29,47 +30,47 @@ const Footer = () => {
               Sunday 11am-6pm
             </p>
           </div>
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <h3>RESOURCES</h3>
           </div>
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <img
               src="./images/ft-logo.png"
               style={{
                 width: 260,
               }}
               alt=""
-              class="mb-3"
+              className="mb-3"
             />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <ul class="social-icons list-unstyled">
+            <ul className="social-icons list-unstyled">
               <li>
-                <a href="#" target="_blank">
+                <Link to="/dashboard">
                   <FaFacebookF />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <Link to="/dashboard">
                   <FaTwitter />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <Link to="/dashboard">
                   <FaInstagram />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <Link to="/dashboard">
                   <FaDribbble />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div class="copyright">
+        <div className="copyright">
           <p>© 2021, Sandman. All rights reserved.</p>
         </div>
       </div>

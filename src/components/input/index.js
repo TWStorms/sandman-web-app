@@ -3,7 +3,7 @@ const Input = ({ type, placeHolder, onChange }) => {
   return (
     <input
       type={type}
-      class="form-control mb-4"
+      className="form-control mb-4"
       placeholder={placeHolder}
       onChange={onChange}
     />

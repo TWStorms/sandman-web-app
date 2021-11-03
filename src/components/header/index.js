@@ -8,7 +8,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <header className="bg-dark py-3">
-      <div class="container d-flex justify-content-between align-items-center ">
+      <div className="container d-flex justify-content-between align-items-center ">
         <a href="/">
           <img src="/images/logo.png" alt="Logo" />
         </a>
@@ -16,8 +16,10 @@ const Header = () => {
           <ul className="list-unstyled d-flex align-items-center mb-0">
             <li className="d-flex align-items-center">
               <a
-                className="text-white px-2 text-decoration-none active"
-                class="active"
+                className="px-2 text-decoration-none"
+                style={{
+                  color: "red",
+                }}
                 href="#home"
               >
                 HOME
@@ -29,27 +31,27 @@ const Header = () => {
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none " href="#home">
                 ACCESSORIES
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none " href="#home">
                 MERCH
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none " href="#home">
                 NEWS
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none " href="#home">
                 SUPPORT
               </a>
             </li>
             <li className="d-flex align-items-center">
-              <a className="text-white px-2 text-decoration-none " href="#">
+              <a className="text-white px-2 text-decoration-none " href="#home">
                 ABOUT
               </a>
             </li>
@@ -58,7 +60,7 @@ const Header = () => {
         <nav className="d-lg-none d-block ml-auto">
           <div onClick={() => setToggle(true)}>
             <FaBars
-              class="fas fa-bars"
+              className="fas fa-bars"
               style={{
                 color: "white",
                 fontSize: "24px",
@@ -69,36 +71,36 @@ const Header = () => {
             />
           </div>
         </nav>
-        <section className="nav" className={toggle ? "nav--open " : ""}>
-          <div class="nav__links bg-dark h-100">
+        <section className={toggle ? "nav--open nav" : "nav"}>
+          <div className="nav__links bg-dark h-100">
             <div className="logo-img">
               <a href="/" className="">
                 <img src="/images/logo.png" alt="Logo" />
               </a>
             </div>
-            <a href="#" class="nav__link">
+            <a href="#home_links" className="nav__link">
               HOME
             </a>
-            <a class="nav__link nav__link--active" href="#">
+            <a className="nav__link nav__link--active" href="#home_links">
               CLOCK
             </a>
-            <a class="nav__link" href="#">
+            <a className="nav__link" href="#home_links">
               ACCESSORIES
             </a>
-            <a class="nav__link" href="#">
+            <a className="nav__link" href="#home_links">
               MERCH
             </a>
-            <a class="nav__link" href="#">
+            <a className="nav__link" href="#home_links">
               NEWS
             </a>
-            <a class="nav__link" href="#">
+            <a className="nav__link" href="#home_links">
               SUPPORT
             </a>
-            <a class="nav__link" href="#">
+            <a className="nav__link" href="#home_links">
               ABOUT
             </a>
           </div>
-          <div class="nav__overlay " onClick={() => setToggle(false)}></div>
+          <div className="nav__overlay" onClick={() => setToggle(false)}></div>
         </section>
       </div>
     </header>

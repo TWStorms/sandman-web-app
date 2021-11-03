@@ -4,11 +4,11 @@ const CarouselSection = () => {
   return (
     <Carousel className="carousel-div pt-5">
       <Carousel.Item interval={10000}>
-        <div class="heading-section d-flex justify-content-between px-5">
+        <div className="heading-section d-flex justify-content-between px-5">
           <div className="col-md-4">
             <h1 className="px-4">THE ALARM CLOCK EVOLVED</h1>
           </div>
-          <div class="icon-heading d-flex col-md-5 col ml-auto align-items-center">
+          <div className="icon-heading d-flex col-md-5 col ml-auto align-items-center">
             <h1>
               SANDMAN <span>DOPLER</span>
               SMART CLOCK
@@ -22,11 +22,11 @@ const CarouselSection = () => {
         />
       </Carousel.Item>
       <Carousel.Item interval={500}>
-        <div class="heading-section d-flex justify-content-between px-5">
+        <div className="heading-section d-flex justify-content-between px-5">
           <div className="col-md-4 col">
             <h1 className="px-4">THE ALARM CLOCK EVOLVED</h1>
           </div>
-          <div class="icon-heading d-flex col-md-5 col ml-auto align-items-center">
+          <div className="icon-heading d-flex col-md-5 col ml-auto align-items-center">
             <h1>
               SANDMAN <span>DOPLER</span>
               SMART CLOCK
@@ -45,7 +45,7 @@ const CarouselSection = () => {
           <div className="col-md-4 col">
             <h1 className="px-4">THE ALARM CLOCK EVOLVED</h1>
           </div>
-          <div class="icon-heading d-flex col-md-5  col ml-auto align-items-center">
+          <div className="icon-heading d-flex col-md-5  col ml-auto align-items-center">
             <h1>
               SANDMAN <span>DOPLER</span>
               SMART CLOCK

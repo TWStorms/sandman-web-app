@@ -63,35 +63,47 @@ const Login = () => {
   //   }
   // };
 
-  // const history = useHistory();
+  const history = useHistory();
 
-  // let headers = new Headers();
-  // headers.append("Content-Type", "application/json");
-  // headers.append("Accept", "application/json");
-  // headers.append("Access-Control-Allow-Credentials", "true");
-  // headers.append("GET", "POST", "OPTIONS");
-  // headers.append("Origin", "http://localhost:3000");
-
-  // headers.append(
+  // let myHeaders = new Headers();
+  // myHeaders.append("Content-Type", "application/json");
+  // myHeaders.append("Accept", "application/json");
+  // myHeaders.append("Access-Control-Allow-Origin", "*");
+  // myHeaders.append("GET", "POST", "OPTIONS");
+  // myHeaders.append("Origin", "https://api.sandmandoppler.bycopilot.com");
+  // myHeaders.append(
   //   "Authorization",
-  //   "Basic " + base64.encode(email + ":" + password)
+  //   "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwd2RfZXhwaXJlZCI6ZmFsc2UsInVzZXJfcm9sZSI6IkFQUFVTRVIiLCJkZXZpY2VfaWQiOiIxMjM0NTY3OCIsInVzZXJfaWQiOiI2MTRhN2ExOWZjZDI3ZjAwMDYwNTM0NDYiLCJleHBpcmF0aW9uX3RpbWUiOjE2MzYwMTc5MTA0OTUsImlzX2V4dGVybmFsIjpmYWxzZSwiand0VmVyc2lvbiI6Imp3dDEifQ.WRU0NzAerKTeYp4MKkJ6w625k82DOtYCQtWEQERm5sk"
   // );
 
+  // var myHeaders = new Headers();
+  // myHeaders.append(
+  //   "Authorization",
+  //   "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwd2RfZXhwaXJlZCI6ZmFsc2UsInVzZXJfcm9sZSI6IkFQUFVTRVIiLCJkZXZpY2VfaWQiOiIxMjM0NTY3OCIsInVzZXJfaWQiOiI2MTRhN2ExOWZjZDI3ZjAwMDYwNTM0NDYiLCJleHBpcmF0aW9uX3RpbWUiOjE2MzYwMTc5MTA0OTUsImlzX2V4dGVybmFsIjpmYWxzZSwiand0VmVyc2lvbiI6Imp3dDEifQ.WRU0NzAerKTeYp4MKkJ6w625k82DOtYCQtWEQERm5sk"
+  // );
+  // myHeaders.append("Content-Type", "application/json");
+
   // const handleLogin = async () => {
-  //   console.log(email, password);
+  //   // console.log(email, password);
   //   // let item = { email, password, applicationId };
   //   await fetch("https://api.sandmandoppler.bycopilot.com/v4/auth/login", {
   //     method: "POST",
-  //     headers: {
-  //       // Accept: "application/json",
-  //       // "Content-Type": "application/json",
-  //     },
+  //     headers: myHeaders,
+  //     // headers: {
+  //     //   Accept: "*/*",
+  //     //   "Content-Type": "application/json",
+  //     //   "Accept-Encoding": "gzip, deflate, br",
+  //     //   Connection: "keep-alive",
+  //     //   "Cache-Control": "no-cache",
+  //     //   Authorization:
+  //     //     "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwd2RfZXhwaXJlZCI6ZmFsc2UsInVzZXJfcm9sZSI6IkFQUFVTRVIiLCJkZXZpY2VfaWQiOiIxMjM0NTY3OCIsInVzZXJfaWQiOiI2MTRhN2ExOWZjZDI3ZjAwMDYwNTM0NDYiLCJleHBpcmF0aW9uX3RpbWUiOjE2MzU4Mzk3OTY0ODIsImlzX2V4dGVybmFsIjpmYWxzZSwiand0VmVyc2lvbiI6Imp3dDEifQ.2Q-E-W3lbN8ikmOm8OIB5Vs4Vz56s0zF_EsxiIRsQGE",
+  //     // },
   //     mode: "no-cors",
   //     body: JSON.stringify({
   //       authenticationDetails: {
   //         applicationId: "SANDMANDOPPLER",
-  //         email: email,
-  //         password: password,
+  //         email: "dev@hsxperts.com",
+  //         password: "Storms@0411",
   //       },
   //       deviceDetails: {
   //         applicationVersion: "154",
@@ -119,10 +131,10 @@ const Login = () => {
   //   // history.push("/dashboard");
   // };
 
-  // // const handleLogin = () => {
-  // //   let path = `dashboard`;
-  // //   history.push(path);
-  // // };
+  const handleLogin = () => {
+    let path = `dashboard`;
+    history.push(path);
+  };
 
   return (
     <div>
@@ -141,12 +153,12 @@ const Login = () => {
           <Input
             placeHolder="Email"
             type="text"
-            // onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <Input
             placeHolder="Password"
             type="password"
-            // onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <div class="text-right">
             <a href="#" class="text-right underline">
@@ -154,7 +166,7 @@ const Login = () => {
             </a>
           </div>
           <div class="text-center">
-            <button class="submit-btn" onClick={{}}>
+            <button class="submit-btn" onClick={handleLogin}>
               LOG IN
             </button>
           </div>
